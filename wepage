@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>LeviAuk nutitelefonide varuosad/parandus</title>
+    <meta charset="utf-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <header>
+      <h1 class="page-title">Nutitelefonide varuosad</h1>
+      <p class="page-description"> Huawei ja iPhone varuosad soodsa hinnaga ja kiirelt kätte.
+      Võta ühendust ja tule oma varuosale juba täna järgi! (või tule juba homme pakiautomaati järele!)</p>
+      <p class="nb"> Lao seis muutub pidevalt, küsi saadavust numbrilt 53462356 või võta ühendust meie Facebooki lehel.</p>
+    </header>
+    
+    <a>FB</>
+
+    <div class="iphone_list">
+      <ul>
+        <li>iPhone 5,5C,5S ekraanid(must/valge)</li>
+        <li>iPhone 6 ekraan(must/valge)</li>
+        <li>iPhone 6S ekraan(must/valge)</li>
+        <li>iPhone 6S Plus ekraan(valge)</li>
+        <li>iPhone 6 Plus ekraan(must/valge)</li>
+        <li>iPhone 7 ekraan(must/valge)</li>
+        <li>iPhone 7 Plus ekraan(must/valge)</li>
+        <li>iPhone 5,5C,5S laadijapesad</li>
+        <li>iPhone 6 laadijapesa</li>
+        <li>iPhone 6S laadijapesa</li>
+        <li>iPhone 6 Plus laadijapesa</li>
+        <li>iPhone 7 laadijapesa</li>
+        <li>iPhone 5,5C,5S kuularid</li>
+        <li>iPhone 7,8 kuular</li>
+        <li>iPhone silikoonümbrised</li>
+        <li>iPhone kaitseklaasid</li>
+      </ul>
+    </div>
+
+      <nav>
+      <ul>
+        <li><a href="#"><b>Arctic</b></a></li>
+        <li><a href="#">Alpine</a></li>
+        <li><a href="#">Antarctic</a></li>
+      </ul>
+      <div class="contact-btn"><a>Contact</a>
+      </div>
+    </nav>
+  </body>
+</html>

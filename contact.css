@@ -1,0 +1,66 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: bold;
+    display: block;
+    background-image: url("https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-size: cover;
+    flex-wrap: wrap;
+    text-align: center
+    
+
+}
+
+
+
+button {
+    width: 50px;
+    height: 50px;
+    background: url(facebook_square.png);
+    background-size: cover;
+    display: inline;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+}
+
+
+email_form {
+    padding-left: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+
+ul {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-flex;
+}
+
+
+.social_media {
+    background-color: floralwhite;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 150px;
+   
+}
