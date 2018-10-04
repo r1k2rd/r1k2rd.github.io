@@ -7,10 +7,51 @@ body {
     background-size: cover;
     flex-wrap: wrap;
     text-align: center
-    
 
 }
 
+.page-title {
+    padding: 20px;
+    font-size: 50 px;
+        
+}
+
+.page-description {
+    font-size: 24;
+}
+
+.parandus {
+    text-align: center;
+    font-size: 24 px;
+}
+
+.email_form {
+    padding-left: 20px;
+}
+
+.nb {
+    font-size: 18px;
+}
+
+.social_media {
+    display: inline-flex;
+}
+
+.list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 2px white;
+    margin: 3px;
+}
+
+.huawei_list {
+    border: 2px white;
+}
+
+.iphone_list {
+    border: 2px white;
+    list-style-image: 
+}
 
 
 #button {
@@ -21,11 +62,11 @@ body {
     display: inline;
     color: white;
     text-align: center;
-    text-decoration: none;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
-a {
+.nav a {
     display: inline;
     color: white;
     text-align: center;
@@ -35,16 +76,13 @@ a {
 }
 
 
+
+
 email_form {
-    padding-left: 300px;
+    padding-left: 50px;
 }
 
-textarea {
-    width: 300px;
-    height: 200px;
-}
-
-ul {
+.nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -54,20 +92,29 @@ ul {
     overflow: hidden;
     background-color: #333;
     display: inline-flex;
+    
+}
+
+.main {
+    margin-bottom: 30px;
+    background-color: floralwhite;
+    margin-left: 260px;
+    margin-right: 260px;
 }
 
 
-.social_media {
-    background-color: floralwhite;
-    margin-left: 450px;
-    margin-right: 450px;
-    margin-top: 150px;
-   
+p a{
+    color: white;
+    background-color: darkslateblue;
+    border-radius: 8%;
+    padding: 2px;
+    text-decoration-line: none;
+    
 }
 
 #language{
-    width: 65;
+    width: 50;
     height: 35;
-    background-image: url(uk_flag.png);
+    background-image: url(eesti_lipp.png);
     background-size: cover;
 }

@@ -3,25 +3,24 @@
     <title>iPhone ja Huawei varuosad/parandus</title>
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <link href="contact_english.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 </head>
-    
 
 <body>
     
-    <button type="button" onclick="window.open('contact_english.html', '_self')" id="language"></button>
+    <button type="button" onclick="window.open('contact.html','_self')" id="language"></button>
     
     <div class="social_media">
-        <p> NB! Jäta sõnumisse ka oma e-posti aadress.</p>
+        <p> NB! Please include your e-mail in the message.</p>
 
         <form action="https://postmail.invotes.com/send"
     method="post" id="email_form">
             <br>
 
-    <input type="text" name="subject" placeholder="Pealkiri" />
+    <input type="text" name="subject" placeholder="Subject" />
             <br>
-    <textarea name="text" placeholder="Sõnum"></textarea>
+    <textarea name="text" placeholder="Message"></textarea>
             <br>
     <input type="hidden" name="access_token" value="60jsb32zs1l70gunc2wocg1j" />
           
@@ -40,12 +39,12 @@
     <!-- <input type="hidden"
                 name="sms_format" value="true" /> -->
    
-    <input id="submit_form" type="submit" value="Saada" onclick="myFunction()" />
+    <input id="submit_form" type="submit" value="Send" onclick="myFunction()" />
             <br>
             
             <script>
 function myFunction() {
-    window.alert("Saadetud");
+    window.alert("Sent");
 }
 </script>
             
@@ -70,7 +69,7 @@ function myFunction() {
         <div class="nav">
             <ul>
               <button type="button" onclick="window.open('https://www.facebook.com/IPhone-varuosad-ekraanid-parandus-Tartus-238016890198103/?view_public_for=238016890198103', '_blank')"id="button"></button>
-                <a href="index.html" target="_self">Pealehele</a>
+                <a href="english.html" target="_self">Homepage</a>
             </ul>         
         </div>
     
