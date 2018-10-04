@@ -10,6 +10,7 @@
 <body>
     <div class="social_media">
         <p>e-post: riispere1@hotmail.com <br> nr: +372 53462356</p>
+        <p> NB! Jäta sõnumisse ka oma e-posti aadress.</p>
 
         <form action="https://postmail.invotes.com/send"
     method="post" id="email_form">
@@ -28,11 +29,6 @@
            
     <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
             
-
-   
-    <input type="text" name="reply_to"
-                placeholder="e-post" />
-            <br>
    
 
 
@@ -41,8 +37,16 @@
     <!-- <input type="hidden"
                 name="sms_format" value="true" /> -->
    
-    <input id="submit_form" type="submit" value="Send" />
+    <input id="submit_form" type="submit" value="Saada" onclick="myFunction()" />
             <br>
+            
+            <script>
+function myFunction() {
+    window.alert("Saadetud");
+}
+</script>
+            
+            
     <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
 </form>
      
