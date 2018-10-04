@@ -98,8 +98,8 @@ email_form {
 .main {
     margin-bottom: 30px;
     background-color: floralwhite;
-    margin-left: 260px;
-    margin-right: 260px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 
@@ -111,3 +111,12 @@ p a{
     text-decoration-line: none;
     
 }
+
+#language {
+    width: 65;
+    height: 35;
+    background-image: url(uk_flag.png);
+    background-size: cover;
+    
+}
+
