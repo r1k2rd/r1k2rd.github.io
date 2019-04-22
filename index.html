@@ -1,79 +1,128 @@
+
+
+<!DOCTYPE html>
+
 <html>
-<head>
-    <title>iPhone ja Huawei varuosad/parandus</title>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-    <link href="main.css" rel="stylesheet" type="text/css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-     <meta name="description" content="iPhone ja Huawei varuosad / parandus Tartus. Varuosade saatmine üle Eesti. Müügil ekraanid,
-                                       laadijapesad, akud, kuularid, kaitseklaasid, ümbrised. Odav ja kiire ekraanivahetus.
-                                       iPhone and Huawei parts / repair in Tartu. Sending parts all over Estonia. Displays, charging ports,
-                                       batteries, earpieces, protective glasses, cases.">
-     <meta name="keywords" content="iphone,huawei,lcd,ekraan,ekraanid,displei,display,tartu,tartus,kuular,earpiece,laadijapesa,laadimispesa,
-                                    charging port,aku,battery,kaitseklaas,parandus,remont,ekraani vahetus, iphone parandus tartus, iphone
-                                    remont tartus, ekraani vahetus tartus, aku vahetus, soodne, odav, iphone repair in tartu, huawei
-                                    repair in tartu, ekraanivahetus">
-    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-</head>
+	<head>
 
-<body>
-    
-     <button type="button" onclick="window.open('english.html', '_self')" id="language"></button>
-    
-    <div class="main">
-    <header>
-      <h1 class="page-title">iPhone ja Huawei varuosad/parandus Tartus</h1>
-      <p class="page-description"> Huawei ja iPhone varuosad soodsa hinnaga ja kiirelt kätte Tartus. <br>
-      Võta ühendust ja tule oma varuosale järgi juba täna! <br>(või tule juba homme pakiautomaati järele!)</p>
-      <p class="nb"> Lao seis muutub pidevalt, küsi saadavust numbrilt 53462356 <br>või võta ühendust meie <a href="https://www.facebook.com/IPhone-varuosad-ekraanid-parandus-Tartus-238016890198103/?view_public_for=238016890198103" target="_blank">Facebooki lehel</a>.</p>
-    </header>
-    
-   
-      
-    <p class="parandus" >Parandustööde hinnad vahemikus 10-15€:
-    <br>Ekraani vahetus 15€
-    <br>Muu varuosa vahetus 10€</p>
+		<title>Start cycling</title>
 
-    <ul class="list">
-        <div class="iphone_list">
-        <ul>
-            <li>iPhone 5,5C,5S,SE ekraanid(must/valge) - 20€</li>
-            <li>iPhone 6 ekraan(must/valge) - 25€</li>
-            <li>iPhone 6S,6 Plus,7 ekraanid(must/valge) - 35€</li>
-            <li>iPhone 6S Plus,7 Plus ekraanid(must/valge) - 40€</li>
-            <li>iPhone 5 aku - 13€</li>
-            <li>iPhone 5S,5C,6 aku - 17€</li>
-            <li>iPhone 6S,7 aku - 20€</li>
-            <li>iPhone 5,5C,5S laadijapesad - 8€</li>
-            <li>iPhone 6,6 Plus,6S,7 laadijapesad -10€</li>
-            <li>iPhone 5,5C,5S,SE kuularid - 5€</li>
-            <li>iPhone 6,6 Plus,6S kuularid - 6€</li>
-            <li>iPhone 7,8 kuularid - 7€</li>
-            <li>iPhone silikoonümbrised - 1€</li>
-            <li>iPhone kaitseklaasid - 1€</li>
-        </ul>
-        </div>
-        <div class="huawei_list">
-        <ul>
-            <li>Huawei P9 Lite ekraan(must/gold) - 30€</li>
-            <li>Huawei P10 Lite ekraan(must/gold) - 30€</li>
-            <li>Huawei P20 Lite ekraan(must) - 40€</li>
-            <li>Huawei P9 Lite aku - 15€</li>
-            <li>Huawei P10 Lite aku - 18€</li>
-            <li>Huawei P9 Lite laadijapesa - 10€</li>
-            <li>Huawei P10 Lite laadijapesa - 12€</li>
-            <li>Huawei P8,P9,P10,P20 Lite kaitseklaasid - 5€</li>
-            <li>Tööriistakomplekt - 2€</li>
-        </ul>
-        </div>
-    </ul>
-    </div>
-    
-    <div class="nav">
-          <button type="button" onclick="window.open('https://www.facebook.com/IPhone-varuosad-ekraanid-parandus-Tartus-238016890198103/?view_public_for=238016890198103', '_blank')" id="button"></button>
-          <a href="contact.html" target="_self">Kirjuta sõnum</a>
-    </div>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
-      
-  </body>
+	</head>
+
+	<body>
+
+		<nav id="heading">should i pick up cycling?</nav>
+
+		<nav id="side-nav">
+			<a href="#">About</a>
+			<a href="#" onclick="fuelView()">Save money</a>
+			<a href="#" onclick="caloriesView()">Get fit</a>
+			<a href="#" onclick="caloriesView()">The environment</a>
+			<a href="#" onclick="caloriesView()">Get happy</a>
+			<a href="#" onclick="caloriesView()">Live longer</a>
+			<a href="#" onclick="caloriesView()">Skip traffic</a>
+
+		</nav>
+
+		<div id="leftside"></div>
+
+		<!--Section for saving money from fuel costs-->
+
+		<div id="mainbox">
+
+		<div id="fuelpage">
+
+			<p>	Feel like retanking your car and increasing fuel costs are really draining you wallet each month?
+				In that case cycling might be something worth considering. </p>
+			<p>	Whether you're going to work or school every day
+				and back, it really amounts to a great deal of distance over time that equals less money spent on filling
+				the gas tank. Not to mention all the repair costs of maintaining a driveable car. A bicycle on the other
+				hand is less demanding in terms of maintenance costs and only needs the power of thighs to get rolling. </p>
+			<p> Check out the form below to see how much money you spend on fuel while driving:   </p>
+
+		<!--Money spent driving form:-->
+
+			<form method="POST" class="form" id="fuelform">
+				
+				<div>
+					<label for="fuel_price">Fuel price: </label> 
+					<input type="text" id="fuelPriceId" name="fuel_price">
+					<label>EUR per litre</label> <label style="color:red" id="fuelErrorId"></label>
+						<br/>
+					<label for="fuel_consumption">Avg. fuel consumption: </label>
+					<input type="text" id="fuelConsumptionId" name="fuel_consumption">
+					<label>litres/100km</label> <label style="color:red" id="consumptionErrorId"></label>
+						<br/>
+					<label for="distance">Distance driven: </label>
+					<input type="text" id="distanceDrivenId" name="distance">
+					<label>kilometres</label> <label style="color:red" id="distanceErrorId"></label>
+						<br/>
+					<label for="your_currency">Select your currency</label>
+						<br/>
+					<button type='button' id="fuelbutton" onclick="getFuelPrice()">Get results</button>
+						<br/>
+					<label id="fuelresult"></label>
+					
+				</div>
+
+			</form>
+
+
+
+		</div>
+
+		<!--Calories burned while biking form-->
+
+		<div id="caloriespage">
+			
+			<form method="POST" class="form" id="caloriesform">
+				
+				<div>
+					<label for="weight_value">Enter weight: </label>
+					<input type="text" name="weight_value" id = "weightValueId">
+					<label>kg</label>
+
+					<label style="color:red" id="weightErrorId"></label>
+
+					<br/>
+
+					<label for="speed_value">Select your cycling speed: </label>
+					<select name="speed_value" id="speedValueId">
+						<option>Slow(~10km/h)</option>
+						<option>Average(~20km/h)</option>
+						<option>Fast(~30km/h)</option>
+					</select>
+
+					<br/>
+
+					<button type="button" id="caloriesbutton" onclick="getCaloriesBurned()">Calculate</button>
+
+					<br/>
+
+					<label id="caloriesBurnedId"></label>
+
+				</div>
+
+
+			</form>
+
+		</div>
+
+	</div>
+
+		<script type="text/javascript" src="javascript.js"></script>
+
+		<script src="money.js"></script>
+
+	</body>
+
 </html>
+
+
+

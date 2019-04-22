@@ -1,0 +1,169 @@
+body{
+	font-family: 'Vollkorn', serif;
+	font-weight: 300; 
+	font-size: 18px;
+	
+}
+
+.form{
+	background-color:#fff;
+	border: 2px solid #ccc;
+	display: block;
+	border-left: 7px solid #ccc;
+	padding: 15px;
+	width: 70%;
+	height: 20%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+button{
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: : 5px;
+	padding-right: 5px;
+	margin: 5px;
+}
+
+
+input{
+	font-size: 18px;
+	width: 15%;
+}
+
+button:hover{
+	font-weight: bold;
+}
+
+select{
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
+}
+
+input{
+	background-color: #eee;
+}
+select{
+	background-color: #eee;
+}
+
+input:hover{
+	background-color: #fff;
+}
+
+select:hover{
+	background-color: #fff;
+}
+
+
+td{
+	
+	border: 1px solid red;
+}
+
+
+#heading{
+	background-color: #eee;
+	font-family: 'Vollkorn', serif;
+	font-size: 26px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid black;
+	letter-spacing: 5px;
+	word-spacing: 15px;
+	padding-left: 40px;
+	z-index: 2;
+}
+
+#side-nav{
+	position: fixed;
+	height: 100%;
+	width: 20%;
+	right: 0;
+	top:0;
+	z-index: 1;
+	background-color: #000;
+	opacity: 0.9;
+}
+
+#leftside{
+	position: fixed;
+	height: 100%;
+	width: 5%;
+	left: 0;
+	top:0;
+	z-index: 1;
+	background-color: #000;
+	opacity: 0.9;
+}
+
+#side-nav>a{
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	padding: 8px;
+	padding-top: 60px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#mainbox{
+	position: relative;
+}
+
+#fuelpage{
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	width: 60%;
+	height: 800px;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	border: 2px solid #aaa;
+	border-left: 7px solid #aaa;
+	border-bottom: 5px solid #aaa;
+	margin-left: 15%;
+	/*backround picture source:
+	https://pixabay.com/photos/abstract-bicycle-bike-blur-1869574/
+	*/
+	background-image: url('bicycle.jpg');
+	background-repeat: no-repeat;
+	background-size: 180%;
+}
+
+#caloriespage{
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	width: 60%;
+	height: 800px;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	border: 2px solid #aaa;
+	border-left: 7px solid #aaa;
+	border-bottom: 5px solid #aaa;
+	margin-left: 15%;
+	/*backround picture source:
+	https://pixabay.com/photos/abstract-bicycle-bike-blur-1869574/
+	*/
+	background-image: url('bicycle3.jpg');
+	background-repeat: no-repeat;
+	background-size: 180%;
+	visibility: hidden;
+}
+
+p{
+	background-color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 70px;
+	margin-right: 70px;
+	text-indent: 40px;
+	border: 2px solid #aaa;
+	border-left: 5px solid #aaa;
+}
