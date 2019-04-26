@@ -125,20 +125,22 @@
 
 /*Change between views */
 
+var aboutview = document.querySelector('#aboutpage');
 var fuelview = document.querySelector('#fuelpage');
 var caloriesview = document.querySelector('#caloriespage');
+var livelongerview = document.querySelector('#livelongerpage');
+var gethappyview = document.querySelector('#gethappypage');
 
-function fuelView(){
-	
-	fuelview.style.visibility = 'visible';
-	caloriesview.style.visibility = 'hidden';
+var viewlist = [aboutview, fuelview, caloriesview, livelongerview, gethappyview];
 
+function changeView(view){
+	for(i = 0; i < viewlist.length; i++){
+		if(viewlist[i] == view){
+			viewlist[i].style.visibility = 'visible';
+		}
+		else{
+			viewlist[i].style.visibility = 'hidden';
+		}
+	}
 }
 
-function caloriesView(){
-	
-	fuelview.style.visibility = 'hidden';
-	caloriesview.style.visibility = 'visible';
-
-
-}

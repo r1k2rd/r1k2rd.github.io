@@ -6,16 +6,18 @@ body{
 }
 
 .form{
-	background-color:#fff;
+	background-color:#000;
+	color: #fff;
+	opacity: 0.8;
 	border: 2px solid #ccc;
 	display: block;
 	border-left: 7px solid #ccc;
 	padding: 15px;
 	width: 70%;
 	height: 20%;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 button{
@@ -115,7 +117,7 @@ td{
 	position: relative;
 }
 
-#fuelpage{
+.page{
 	position: absolute;
 	top: 0;
 	display: inline-block;
@@ -128,43 +130,67 @@ td{
 	border-left: 7px solid #aaa;
 	border-bottom: 5px solid #aaa;
 	margin-left: 15%;
-	/*backround picture source:
-	https://pixabay.com/photos/abstract-bicycle-bike-blur-1869574/
+	visibility: hidden;
+	background-repeat: no-repeat;
+	background-size: 170%;
+}
+
+#aboutpage{
+
+	background-image: url('bicycle6.jpg');
+	visibility: visible;
+
+}
+
+#fuelpage{
+	
+	/*backround pictures source:
+	https://pixabay.com/
 	*/
 	background-image: url('bicycle.jpg');
-	background-repeat: no-repeat;
-	background-size: 180%;
 }
 
 #caloriespage{
-	position: absolute;
-	top: 0;
-	display: inline-block;
-	width: 60%;
-	height: 800px;
-	margin: auto;
-	padding-top: 100px;
-	padding-bottom: 50px;
-	border: 2px solid #aaa;
-	border-left: 7px solid #aaa;
-	border-bottom: 5px solid #aaa;
-	margin-left: 15%;
-	/*backround picture source:
-	https://pixabay.com/photos/abstract-bicycle-bike-blur-1869574/
-	*/
-	background-image: url('bicycle3.jpg');
-	background-repeat: no-repeat;
-	background-size: 180%;
-	visibility: hidden;
+	background-image: url('bicycle5.jpg');
 }
 
-p{
-	background-color: #fff;
+#livelongerpage{
+	background-image: url('bicycle4.jpg');
+}
+
+#gethappypage{
+	background-image: url('bicycle3.jpg');
+}
+
+p,
+ul{
+	background-color: #000;
+	opacity: 0.8;
+	color: #fff;
 	display: inline-block;
 	font-size: 18px;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: 10%;
+	margin-right: 10%;
 	text-indent: 40px;
 	border: 2px solid #aaa;
 	border-left: 5px solid #aaa;
+	padding: 10px;
+	align-content: center;
+}
+
+li{
+	margin-left: 10px;
+}
+
+.reference{
+	color: black;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: bold;
 }
