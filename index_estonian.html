@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<title>Hakka ratturiks</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+		<meta charset="UTF-8">
+
+	</head>
+
+	<body>
+
+		<nav id="heading">võtta ratas?</nav>
+
+		
+
+		<nav id="side-nav">
+
+			<a href="index_english.html" class="language" id="eng" ></a>
+
+			<a href="#" onclick="changeView(aboutview)">Pealeht</a>
+			<a href="#" onclick="changeView(fuelview)">Säästa raha</a>
+			<a href="#" onclick="changeView(caloriesview)">Saa vormi</a>
+			<a href="#" onclick="changeView(livelongerview)">Ela kauem</a>
+			<a href="#" onclick="changeView(gethappyview)">Ole õnnelikum</a>
+			<!--<a href="#" onclick="caloriesView()">The environment</a>
+			<a href="#" onclick="caloriesView()">Skip traffic</a> -->
+
+		</nav>
+
+		<div id="leftside"></div>
+
+		<!--Section for saving money from fuel costs-->
+
+		<div id="mainbox">
+
+		<div class="page" id="aboutpage">
+			
+			<p>Tere tulemast <span style="color:red">takeab1ke.com</span>'i! See veebileht on tehtud ükskõik kellele, kes 
+			tunneb nagu vähemalt üks järgnevatest punktidest kirjeldab sind:</p>
+			
+			<ul>
+				<li>tahan raha kokku hoida</li>
+				<li>tunnen end liiga stressis ja ärevil liiklusest</li>
+				<li>veedan liiga palju aega tipptunnil ummikus</li>
+				<li>tahan olla tervislikum ja kauem elada</li>
+				<li>tahan ilusaid ja vormis jalgu</li>
+				<li>tahan olla keskkonnasõbralikum</li>
+				<li>tahan et elu oleks rõõmsam ja lõbusam</li>
+				<li>soovin kaalust alla võtta</li>
+				<li>otsin endale uut hobi</li>
+
+			
+			</ul>
+
+		</div>
+
+		<div class = "page" id="fuelpage">
+
+			<p> Tunned, et auto tankimine ja pidev kütusehinna tõus annavad paraja põntsu rahakotile? Kui jah,
+				siis rattaga sõitmine võib olla üks lahendustest. </p>
+			<p>	Sõites kasvõi ainult kooli või tööle ning tagasi iga päev kuhjub aasta jooksul päris pikaks vahemaaks,
+				mis võrdub rohkema rahaga, mida kulutad kütuse ostmisele. Rääkimata kõikidest parandustest ja hooldustest ning
+				kindlustusmaksetest, on ratas see-eest palju vähemnõudlikum selles osas ning vajab kütuseks ainult kondimootorit,
+				et liikuma saada.  </p>
+			<p> Viska pilk allolevale kütusekalkulaatorile ja arvuti välja, palju sul kütuse peale raha kulub:   </p>
+
+		<!--Money spent driving form:-->
+
+			<form class="form" id="fuelform">
+				
+				<div>
+					<label for="fuel_price">Kütuse hind: </label> 
+					<input type="text" id="fuelPriceId" name="fuel_price">
+					<label>EUR/liiter</label> <label style="color:red" id="fuelErrorId"></label>
+						<br/>
+					<label for="fuel_consumption">Keskm. kütusekulu: </label>
+					<input type="text" id="fuelConsumptionId" name="fuel_consumption">
+					<label>liitrit/100km</label> <label style="color:red" id="consumptionErrorId"></label>
+						<br/>
+					<label for="distance">Läbitud vahemaa: </label>
+					<input type="text" id="distanceDrivenId" name="distance">
+					<label>kilomeetrit</label> <label style="color:red" id="distanceErrorId"></label>
+						<br/>
+					<!--<label for="your_currency">Select your currency</label> -->
+						<br/>
+					<button type='button' id="fuelbutton" onclick="getFuelPrice()">Arvuta!</button>
+						<br/>
+					<label id="fuelresult"></label>
+					
+				</div>
+
+			</form>
+
+
+
+		</div>
+
+		<!-- Calories burned biking page -->
+
+
+		
+		<div class = "page" id="caloriespage">
+
+			<p>Rattaga sõitmine on ülimalt hea viis kalorite põletamiseks, et saada saledaks. Isegi kui
+			sõita ratta ainult 30 minutit päevas, et sõita kooli või tööle ning tagasi, siis natuke
+			vaagides seda läbitud teed, millega see summeerub pikema aja peale, kasvab päris suureks,
+			kui seda teed mitu korda nädalas sõita. Vaata täpsemalt, kui palju kilokaloreid sa võid
+			potentsiaalselt põletada sõites kas aeglaselt, keskmiselt või kiiresti. Sisesta ainult
+			oma kehakaal, tempo, millega sulle sõita tavaliselt meeldib ja imesta, kui palju kaloreid
+			võid ühe tunni jooksul põletada:</p>
+
+			<!--Calories burned while biking form-->
+			
+			<form class="form" id="caloriesform">
+				
+				<div>
+					<label for="weight_value">Kehakaal: </label>
+					<input type="text" name="weight_value" id = "weightValueId">
+					<label>kg</label>
+
+					<label style="color:red" id="weightErrorId"></label>
+
+					<br/>
+
+					<label for="speed_value">Ligikaudne sõidukiirus: </label>
+					<select name="speed_value" id="speedValueId">
+						<option>Aeglane(~10km/h)</option>
+						<option>Keskmine(~20km/h)</option>
+						<option>Kiire(~30km/h)</option>
+					</select>
+
+					<br/>
+
+					<button type="button" id="caloriesbutton" onclick="getCaloriesBurned()">Arvuta!</button>
+
+					<br/>
+
+					<label id="caloriesBurnedId"></label>
+
+				</div>
+
+
+			</form>
+
+
+
+		<p> See, kui palju kilokaloreid saab põletatud, oleneb tegelikult veel mõnedest asjaoludest:
+			kui auklik või sile on tee, ratta enda seisukord(tühja kummiga näeb rohkem vaeva),
+			tee kallak(üles/alla). Näiteks ülesmäge sõites peab küll rohkem tööd tegema, aga see-eest
+			kulutab rohkem kaloreid ning võite kindlad olla, et nõlva tipus tulitavad jalad korralikult,
+			et võiks kasvõi <span style="color: red; font-weight: bold;">jalapäeva vahele jätta</span>, kui
+			soovite trennitegijate mõistetes rääkida. Sõites kas kõrge käiguga või ülesmägu treenid jalalihaseid
+			ja tuharaid tohutult, millest saab tuleb hea jalatrenn kokku, eks proovi ise!  
+			 Allamäge veeredes teeb aga gravitatsioon ise kogu töö ära
+			 ja lihased puhkavad.    </p>
+
+
+		</div>
+
+		<div class = "page" id="gethappypage">
+
+			<p>Rattasõit ning muu füüsiline tegevus üldiselt <a href="https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(18)30227-X/fulltext" target="_blank">parandab tuju ning alandab stressitaset,</a> mis võrdub
+			õnnelikuma ja rahulolevama vaimuga. </p>
+
+		</div>
+
+		<div class = "page" id="livelongerpage">
+
+			<p> On teadatuntud fakt, et regulaarne füüsiline tegevus aitab vältida haigusi nagu
+				ülekaalulises, südamehaigused, vähkkasvaja, vaimuhaigused, diabeet ja artriit.
+				Mis eristab rattasõitu(ja ujumist näiteks) teistest tevustest on see, et see 
+				on madala põrutuslävega tegevus, mis tähendab seda, et põlveliigesed jalad üldiselt
+				ei saa põrutada ning on seetõttu tervemad kui jooksmisel või jalutamisel(mis on muidu
+				ka ülimalt tervislikud tegevused). Rattaga sõitmine mitu korda nädalas:  </p>
+
+			<ul>
+				<li>Tõstab südamevereringkonna tervist ja tugevdab südamelihast
+					<br/> <a class="reference" href="http://theconversation.com/cycling-to-work-major-new-study-suggests-health-benefits-are-staggering-76292"target="_blank"> (vähendab infarkti, kõrge vererõhu ja südameataki esinemise ohtu)</a> </li>
+				<li>Suurendab võhma, kopsu tervist ja kopsumahtu</li>
+				<li>Tõstab jalalihaste tugevust ja painduvust</li>
+				<li>Parandab liigeste liikuvust</li>
+				<li>Vähendab stressi, ärevuse ja depressiooni taset</li>
+				<li>Parandab rühti</li>
+				<li>Arendab koordinatsiooni</li>
+				<li>Tugevdab luid</li>
+				<li>Vähendab keharasva protsenti</li>
+				<li>Vähendab vähkkasvaja tekke tõenäosust(nt. soole- ja rinnavähi)</li>
+				<li>Vähendab suhkrutõve tekkimise tõenäousust</li>
+				<li>Tõstab aju aktiivsust</li>
+				<li><a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(17)30099-2" target="_blank">Aeglustab vananemist</a></li>
+				<li>Aitab kontrollida tähelepanuhäireid lastel</li>
+
+			</ul> 
+
+		</div>
+
+
+	</div>
+
+		<script type="text/javascript" src="javascript.js"></script>
+
+
+	</body>
+
+</html>
+
+
+

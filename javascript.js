@@ -9,6 +9,12 @@
 
 	var result = "";
 
+	var language = "eng";
+
+	function changeLanguage(new_language){
+		language = new_language;
+	}
+
 
 	function getFuelPrice(){
 
@@ -53,8 +59,8 @@
 	}
 	else{
 
-				result =  "Money spent on fuel = " + Math.round(((Number(fuelPrice) * Number(avgFuelConsumption)
-					* (Number(distanceDriven)/100) ))*100)/100 + " EUR";
+				result =   Math.round((Number(fuelPrice) * Number(avgFuelConsumption)
+					* (Number(distanceDriven)/100) )) + " EUR";
 				document.getElementById('fuelErrorId').innerHTML = "";
 				document.getElementById('consumptionErrorId').innerHTML = "";
 				document.getElementById('distanceErrorId').innerHTML = "";
@@ -101,20 +107,32 @@
 		document.getElementById('weightErrorId').innerHTML = errorMessage;
 		document.getElementById('caloriesBurnedId').innerHTML = "";
 	}else{
-		switch(speed){
-			case("Slow(~10km/h)"):
-			caloriesPerHour = Math.round(Number(weight) * METcyclingSlow);
-			break;
-			case("Average(~20km/h)"):
-			caloriesPerHour = Math.round(Number(weight) * METcyclingAverage);
-			break;
-			case("Fast(~30km/h)"):
-			caloriesPerHour = Math.round(Number(weight) * METcyclingFast);
-			break;
-		}
+			switch(speed){
+				case("Slow(~10km/h)"):
+				caloriesPerHour = (Math.round(Number(weight) * METcyclingSlow));
+				break;
+				case("Average(~20km/h)"):
+				caloriesPerHour = Math.round(Number(weight) * METcyclingAverage);
+				break;
+				case("Fast(~30km/h)"):
+				caloriesPerHour = Math.round(Number(weight) * METcyclingFast);
+				break;
+
+				case("Aeglane(~10km/h)"):
+				caloriesPerHour = Math.round(Number(weight) * METcyclingSlow);
+				break;
+				case("Keskmine(~20km/h)"):
+				caloriesPerHour = Math.round(Number(weight) * METcyclingAverage);
+				break;
+				case("Kiire(~30km/h)"):
+				caloriesPerHour = Math.round(Number(weight) * METcyclingFast);
+				break;
+			}
+			
+
 		errorMessage = "";
 		
-		document.getElementById('caloriesBurnedId').innerHTML = "Calories burned = " + caloriesPerHour + "kcal/h";
+		document.getElementById('caloriesBurnedId').innerHTML = caloriesPerHour + "kcal/h";
 		document.getElementById('weightErrorId').innerHTML = "";
 	}
 
