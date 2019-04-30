@@ -150,7 +150,7 @@ td{
 	margin-left: 15%;
 	visibility: hidden;
 	background-repeat: no-repeat;
-	background-size: 170%;
+	background-size: cover;
 	overflow: auto;
 }
 
