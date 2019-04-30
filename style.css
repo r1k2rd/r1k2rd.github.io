@@ -12,7 +12,7 @@ body{
 	border: 2px solid #ccc;
 	display: block;
 	border-left: 7px solid #ccc;
-	padding: 15px;
+	padding: 20px;
 	width: 70%;
 	height: 20%;
 	margin-top: 5%;
@@ -140,9 +140,9 @@ td{
 	top: 0;
 	display: inline-block;
 	width: 60%;
-	height: 800px;
+	height: 700px;
 	margin: auto;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 	border: 2px solid #aaa;
 	border-left: 7px solid #aaa;
@@ -151,6 +151,7 @@ td{
 	visibility: hidden;
 	background-repeat: no-repeat;
 	background-size: 170%;
+	overflow: auto;
 }
 
 #aboutpage{
