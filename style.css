@@ -13,10 +13,12 @@ body{
 	display: block;
 	border-left: 7px solid #ccc;
 	padding: 20px;
+	padding-bottom: 40px;
 	width: 70%;
 	height: 20%;
 	margin-top: 5%;
 	margin-left: 10%;
+	margin-right: 10%;
 	margin-bottom: 5%;
 }
 

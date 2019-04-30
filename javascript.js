@@ -9,13 +9,6 @@
 
 	var result = "";
 
-	var language = "eng";
-
-	function changeLanguage(new_language){
-		language = new_language;
-	}
-
-
 	function getFuelPrice(){
 
 	if(document.getElementById('fuelPriceId').value != ""){
