@@ -8,10 +8,8 @@ body{
 .form{
 	background-color:#000;
 	color: #fff;
-	opacity: 0.8;
-	border: 2px solid #ccc;
+	border-radius: 8px;
 	display: block;
-	border-left: 7px solid #ccc;
 	padding: 20px;
 	padding-bottom: 40px;
 	width: 70%;
@@ -20,6 +18,7 @@ body{
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 5%;
+	opacity: 0.8;
 }
 
 button{
@@ -193,8 +192,7 @@ ul{
 	margin-left: 10%;
 	margin-right: 10%;
 	text-indent: 40px;
-	border: 2px solid #aaa;
-	border-left: 5px solid #aaa;
+	border-radius: 8px;
 	padding: 10px;
 	align-content: center;
 }
